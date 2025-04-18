@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -115,32 +114,32 @@ const Index = () => {
 
   const portfolioProjects = [
     {
-      title: "Mountain Retreat Resort",
-      category: "Hospitality",
-      description: "Modern website design for a luxury mountain resort featuring immersive imagery and seamless booking.",
-      imageSrc: "https://images.unsplash.com/photo-1551038247-3d9af20df552?q=80&w=1000",
-      link: "/case-study/mountain-retreat",
+      title: "Personal Portfolio",
+      category: "Portfolio Website",
+      description: "A modern, responsive portfolio website showcasing skills, projects and achievements with sleek animations and interactions.",
+      imageSrc: "/lovable-uploads/5fb68c78-32ad-44a0-a072-7b64c0d962a1.png",
+      link: "https://ruhaansingh.netlify.app/",
     },
     {
-      title: "Artisan Bakery",
-      category: "Food & Beverage",
-      description: "E-commerce solution for an artisan bakery with online ordering and local delivery options.",
-      imageSrc: "https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=1000",
-      link: "/case-study/artisan-bakery",
+      title: "Human Hope Foundation",
+      category: "Non-Profit",
+      description: "Website for an NGO dedicated to creating positive change through education and community support programs.",
+      imageSrc: "/lovable-uploads/96ee4ab8-094a-4d33-b577-c95127219d7b.png",
+      link: "https://humanhopefoundation.netlify.app/",
     },
     {
-      title: "Architects Collective",
-      category: "Architecture",
-      description: "Portfolio website for an architecture firm showcasing their projects with interactive 3D models.",
-      imageSrc: "https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=1000",
-      link: "/case-study/architects-collective",
+      title: "Startups and Businesses",
+      category: "Healthcare Tech",
+      description: "GlaucoGuard - Revolutionary AI-powered platform for early glaucoma detection and diagnosis.",
+      imageSrc: "/lovable-uploads/c15e553d-5a08-4d5d-ac45-99d8bd2ffced.png",
+      link: "https://glaucoguard.netlify.app/",
     },
     {
       title: "Finance Advisory",
       category: "Finance",
       description: "Corporate website for a financial advisory firm with secure client portals and resource library.",
       imageSrc: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1000",
-      link: "/case-study/finance-advisory",
+      link: "#",
     },
   ];
 
@@ -211,7 +210,7 @@ const Index = () => {
   const pricingPlans = [
     {
       tier: "Starter",
-      price: "$1,499",
+      price: "150",
       description: "Perfect for individuals and small projects needing a professional online presence.",
       features: [
         "Custom design",
@@ -224,7 +223,7 @@ const Index = () => {
     },
     {
       tier: "Business",
-      price: "$2,999",
+      price: "300",
       description: "Comprehensive solution for established businesses looking to enhance their digital presence.",
       features: [
         "Premium custom design",
@@ -240,7 +239,7 @@ const Index = () => {
     },
     {
       tier: "Premium",
-      price: "$4,999+",
+      price: "500",
       description: "Advanced solutions for businesses with complex requirements and custom functionality.",
       features: [
         "Elite custom design",

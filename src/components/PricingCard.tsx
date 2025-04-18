@@ -37,7 +37,7 @@ const PricingCard = ({
       )}
       <h3 className="text-2xl font-bold text-white mb-2">{tier}</h3>
       <div className="mb-4">
-        <span className="text-3xl font-bold text-white">{price}</span>
+        <span className="text-3xl font-bold text-white">${price}</span>
         {price !== "Custom" && (
           <span className="text-white/70 ml-1">/project</span>
         )}
