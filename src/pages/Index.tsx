@@ -145,25 +145,25 @@ const Index = () => {
 
   const testimonials = [
     {
-      quote: "DMV Web Designs transformed our outdated website into a modern, functional platform that perfectly represents our brand. The increased conversion rate speaks for itself.",
-      name: "Sarah Johnson",
+      quote: "DMV Web Designs created an exceptional portfolio website that perfectly showcases my work and professional brand. Their attention to detail and modern design approach exceeded my expectations.",
+      name: "Anonymous Client",
+      role: "Professional",
+      company: "Personal Portfolio",
+      avatarSrc: "/placeholder.svg",
+    },
+    {
+      quote: "Working with DMV Web Designs was a great experience. They understood our mission and created a website that effectively communicates our cause and helps us reach more people in need.",
+      name: "Vikram Kanwar",
+      role: "Director",
+      company: "Human Hope Foundation",
+      avatarSrc: "/placeholder.svg",
+    },
+    {
+      quote: "The team at DMV delivered a cutting-edge platform that perfectly aligns with our innovative healthcare technology. Their expertise in UI/UX design helped us create an intuitive user experience.",
+      name: "Sarah Chen",
       role: "CEO",
-      company: "Mountain Retreat Resort",
-      avatarSrc: "https://randomuser.me/api/portraits/women/45.jpg",
-    },
-    {
-      quote: "The team at DMV understood our vision right away. Their design expertise and attention to detail resulted in a website that exceeds all our expectations.",
-      name: "Michael Chen",
-      role: "Founder",
-      company: "Artisan Bakery",
-      avatarSrc: "https://randomuser.me/api/portraits/men/32.jpg",
-    },
-    {
-      quote: "Working with DMV Web Designs was a game-changer for our architecture firm. Our new portfolio site has helped us secure major international projects.",
-      name: "Alessandra Romano",
-      role: "Partner",
-      company: "Architects Collective",
-      avatarSrc: "https://randomuser.me/api/portraits/women/68.jpg",
+      company: "GlaucoGuard",
+      avatarSrc: "/placeholder.svg",
     },
   ];
 
@@ -620,7 +620,11 @@ const Index = () => {
               <div className={`glass-card rounded-xl p-8 ${isVisible.contact ? 'animate-slide-left' : 'opacity-0'}`}>
                 <h3 className="text-2xl font-bold mb-6 text-white">Send Us a Message</h3>
                 
-                <form className="space-y-6">
+                <form 
+                  className="space-y-6" 
+                  action="https://formsubmit.co/dmvwebdesigns1@gmail.com" 
+                  method="POST"
+                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1">
@@ -629,6 +633,8 @@ const Index = () => {
                       <input
                         type="text"
                         id="name"
+                        name="name"
+                        required
                         className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
                         placeholder="Your name"
                       />
@@ -640,6 +646,8 @@ const Index = () => {
                       <input
                         type="email"
                         id="email"
+                        name="email"
+                        required
                         className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
                         placeholder="your.email@example.com"
                       />
@@ -652,6 +660,8 @@ const Index = () => {
                     </label>
                     <select
                       id="project-type"
+                      name="project-type"
+                      required
                       className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
                     >
                       <option value="" className="bg-navy-800">Select project type</option>
@@ -668,13 +678,15 @@ const Index = () => {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
+                      required
                       rows={5}
                       className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
                       placeholder="Tell us about your project..."
                     ></textarea>
                   </div>
 
-                  <Button variant="primary" className="w-full justify-center">
+                  <Button variant="primary" type="submit" className="w-full justify-center">
                     Send Message
                   </Button>
                 </form>
@@ -684,20 +696,13 @@ const Index = () => {
                 <div className="glass-card rounded-xl p-8 mb-8">
                   <h3 className="text-2xl font-bold mb-6 text-white">Contact Information</h3>
                   <div className="space-y-4">
-                    <div className="flex items-start">
-                      <MapPin className="text-purple-500 mr-4 mt-1" size={20} />
-                      <div>
-                        <p className="text-white">123 Web Street</p>
-                        <p className="text-white/70">Design City, 10001</p>
-                      </div>
-                    </div>
                     <div className="flex items-center">
                       <Phone className="text-purple-500 mr-4" size={20} />
-                      <p className="text-white">(123) 456-7890</p>
+                      <a href="tel:+15716851515" className="text-white">(571) 685-1515</a>
                     </div>
                     <div className="flex items-center">
                       <Mail className="text-purple-500 mr-4" size={20} />
-                      <p className="text-white">info@dmvwebdesigns.com</p>
+                      <a href="mailto:dmvwebdesigns1@gmail.com" className="text-white">dmvwebdesigns1@gmail.com</a>
                     </div>
                   </div>
                 </div>
