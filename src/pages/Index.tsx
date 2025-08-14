@@ -368,41 +368,23 @@ const Index = () => {
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className={`glass-card rounded-xl p-8 ${isVisible.about ? 'animate-slide-left animate-delay-100' : 'opacity-0'}`}>
                 <h3 className="text-2xl font-bold mb-4 text-white">User Experience</h3>
-                <p className="text-white/80 mb-6">
+                <p className="text-white/80">
                   We create intuitive, engaging user experiences that guide visitors seamlessly through your website.
                 </p>
-                <div className="flex items-center">
-                  <div className="h-2 bg-gray-300 rounded-full flex-grow">
-                    <div className="h-2 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full w-[98%]"></div>
-                  </div>
-                  <span className="ml-4 text-white">98%</span>
-                </div>
               </div>
 
               <div className={`glass-card rounded-xl p-8 ${isVisible.about ? 'animate-fade-in animate-delay-200' : 'opacity-0'}`}>
                 <h3 className="text-2xl font-bold mb-4 text-white">Performance</h3>
-                <p className="text-white/80 mb-6">
+                <p className="text-white/80">
                   Fast-loading, optimized websites that provide smooth experiences and rank better in search results.
                 </p>
-                <div className="flex items-center">
-                  <div className="h-2 bg-gray-300 rounded-full flex-grow">
-                    <div className="h-2 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full w-[95%]"></div>
-                  </div>
-                  <span className="ml-4 text-white">95%</span>
-                </div>
               </div>
 
               <div className={`glass-card rounded-xl p-8 ${isVisible.about ? 'animate-slide-right animate-delay-300' : 'opacity-0'}`}>
                 <h3 className="text-2xl font-bold mb-4 text-white">Conversion</h3>
-                <p className="text-white/80 mb-6">
+                <p className="text-white/80">
                   Strategic designs that effectively convert visitors into customers through clear calls-to-action.
                 </p>
-                <div className="flex items-center">
-                  <div className="h-2 bg-gray-300 rounded-full flex-grow">
-                    <div className="h-2 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full w-[92%]"></div>
-                  </div>
-                  <span className="ml-4 text-white">92%</span>
-                </div>
               </div>
             </div>
 
@@ -577,26 +559,26 @@ const Index = () => {
           
           <div className={`section-container ${isVisible.pricing ? 'animate-fade-in' : 'opacity-0'}`}>
             <SectionHeading
-              title="Pricing Plans"
-              subtitle="Transparent pricing options designed to meet different needs and budgets. All plans include custom design, responsive development, and ongoing support."
+              title="Let's Build Your Website"
+              subtitle="Every project is unique. Contact us to get a personalized quote tailored to your specific needs and requirements."
               gradient
             />
 
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-              {pricingPlans.map((plan, index) => (
-                <div 
-                  key={index}
-                  className={`${isVisible.pricing ? `animate-scale-up animate-delay-${index * 200}` : 'opacity-0'}`}
-                >
-                  <PricingCard
-                    tier={plan.tier}
-                    price={plan.price}
-                    description={plan.description}
-                    features={plan.features}
-                    popular={plan.popular}
-                  />
+            <div className={`mt-12 max-w-2xl mx-auto text-center ${isVisible.pricing ? 'animate-scale-up animate-delay-200' : 'opacity-0'}`}>
+              <div className="glass-card rounded-xl p-12">
+                <h3 className="text-3xl font-bold mb-6 text-white">Get Your Personalized Quote</h3>
+                <p className="text-white/80 mb-8 text-lg">
+                  Tell us about your project and we'll provide you with a detailed quote that matches your vision and budget.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button variant="primary" size="lg" className="flex items-center">
+                    Contact Us Today <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                  <Button variant="outline" size="lg">
+                    Schedule a Call
+                  </Button>
                 </div>
-              ))}
+              </div>
             </div>
 
             <div className={`mt-24 max-w-3xl mx-auto ${isVisible.pricing ? 'animate-fade-in animate-delay-500' : 'opacity-0'}`}>
@@ -622,7 +604,7 @@ const Index = () => {
                 
                 <form 
                   className="space-y-6" 
-                  action="https://formsubmit.co/dmvwebdesigns1@gmail.com" 
+                  action="https://formsubmit.co/dmvwebdesign.operations@gmail.com" 
                   method="POST"
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -702,7 +684,7 @@ const Index = () => {
                     </div>
                     <div className="flex items-center">
                       <Mail className="text-purple-500 mr-4" size={20} />
-                      <a href="mailto:dmvwebdesigns1@gmail.com" className="text-white">dmvwebdesigns1@gmail.com</a>
+                      <a href="mailto:dmvwebdesign.operations@gmail.com" className="text-white">dmvwebdesign.operations@gmail.com</a>
                     </div>
                   </div>
                 </div>
